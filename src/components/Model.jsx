@@ -60,7 +60,7 @@ const Modal = () => {
           Take a closer look.
         </h1>
         <div className="flex flex-col items-center mt-5">
-          <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative ">
+          <div className="w-[100vw] h-[75vh] md:h-[90vh] overflow-hidden relative">
             <ModelView
               index={1}
               groupRef={small}
@@ -80,7 +80,7 @@ const Modal = () => {
               size={size}
             />
             <Canvas
-              className="w-full h-full"
+              // className="w-full h-full relative"
               style={{
                 position: "fixed",
                 top: 0,
