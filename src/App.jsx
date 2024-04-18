@@ -11,9 +11,9 @@ function App() {
   return (
     <main className="bg-black">
       <Navbar />
+      <Model />
       <Hero />
       <Highlights />
-      <Model />
       <Features />
       <Chips />
       <Footer />
