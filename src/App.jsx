@@ -11,11 +11,11 @@ function App() {
   return (
     <main className="bg-black">
       <Navbar />
-      {/* <Hero />
-      <Highlights /> */}
-      <Model />
+      <Hero />
+      <Highlights />
+      {/* <Model /> */}
       <Features />
-      {/* <Chips /> */}
+      <Chips />
       <Footer />
     </main>
   );
