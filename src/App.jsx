@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <Highlights />
-      <Model />
+      {window.innerWidth > 760 && <Model />}
       <Features />
       <Chips />
       <Footer />

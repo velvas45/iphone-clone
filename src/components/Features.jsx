@@ -35,7 +35,7 @@ const Features = () => {
     gsap.to(".g_section", {
       scrollTrigger: {
         trigger: ".g_section",
-        start: "bottom 25%",
+        start: "bottom 20%",
         toggleActions: "restart reverse reverse reverse",
       },
       filter: "blur(5px)",

@@ -41,10 +41,7 @@ const ModalView = ({
         target={new THREE.Vector3(0, 0, 0)}
         onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
       />
-      <group
-        ref={groupRef}
-        name={`${index === 1} ? 'small' : 'large'`}
-        position={[0, 0, 0]}>
+      <group ref={groupRef} name={`${index === 1} ? 'small' : 'large'`}>
         <Suspense fallback={<Loader />}>
           <Iphone
             scale={index === 1 ? [15, 15, 15] : [18, 18, 18]}
