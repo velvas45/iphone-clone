@@ -60,25 +60,27 @@ const Modal = () => {
           Take a closer look.
         </h1>
         <div className="flex flex-col items-center mt-5">
-          <div className="w-[100vw] h-[300px] md:h-[90vh] overflow-hidden relative">
-            {/* <ModelView
-              index={1}
-              groupRef={small}
-              gsapType="view1"
-              controlRef={cameraControlSmall}
-              setRotationState={setSmallRotation}
-              item={model}
-              size={size}
-            /> */}
-            {/* <ModelView
-              index={2}
-              groupRef={large}
-              gsapType="view2"
-              controlRef={cameraControlLarge}
-              setRotationState={setLargeRotation}
-              item={model}
-              size={size}
-            /> */}
+          <div className="w-[100vw] h-[75vh] md:h-[90vh] overflow-hidden relative">
+            <div className="w-[100vw] h-[75vh] md:h-[90vh] overflow-hidden relative">
+              <ModelView
+                index={1}
+                groupRef={small}
+                gsapType="view1"
+                controlRef={cameraControlSmall}
+                setRotationState={setSmallRotation}
+                item={model}
+                size={size}
+              />
+              <ModelView
+                index={2}
+                groupRef={large}
+                gsapType="view2"
+                controlRef={cameraControlLarge}
+                setRotationState={setLargeRotation}
+                item={model}
+                size={size}
+              />
+            </div>
             <Canvas
               className="w-full h-full"
               style={{
