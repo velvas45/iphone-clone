@@ -61,7 +61,7 @@ const Modal = () => {
         </h1>
         <div className="flex flex-col items-center mt-5">
           <div className="w-[100vw] h-[300px] md:h-[90vh] overflow-hidden relative">
-            <ModelView
+            {/* <ModelView
               index={1}
               groupRef={small}
               gsapType="view1"
@@ -69,8 +69,8 @@ const Modal = () => {
               setRotationState={setSmallRotation}
               item={model}
               size={size}
-            />
-            <ModelView
+            /> */}
+            {/* <ModelView
               index={2}
               groupRef={large}
               gsapType="view2"
@@ -78,9 +78,9 @@ const Modal = () => {
               setRotationState={setLargeRotation}
               item={model}
               size={size}
-            />
+            /> */}
             <Canvas
-              // className="w-full h-full relative"
+              className="w-full h-full"
               style={{
                 position: "fixed",
                 top: 0,
