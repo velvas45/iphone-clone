@@ -9,11 +9,11 @@ import * as Sentry from "@sentry/react";
 
 function App() {
   return (
-    <main className="bg-black">
+    <main className="bg-black overflow-y-auto">
       <Navbar />
       <Hero />
       <Highlights />
-      {window.innerWidth > 760 && <Model />}
+      <Model />
       <Features />
       <Chips />
       <Footer />
