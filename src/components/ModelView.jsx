@@ -26,18 +26,24 @@ const ModalView = ({
       {/* Ambient Light */}
       <ambientLight intensity={0.3} />
 
-      <PerspectiveCamera makeDefault position={[0, 0, 4]} />
+      <PerspectiveCamera
+        makeDefault
+        fov={window.innerWidth < 760 ? 40 : 55}
+        position={[0, 0, 4]}
+      />
 
       <Lights />
 
       <OrbitControls
+        enabled={window.innerWidth < 760 ? false : true}
         makeDefault
         ref={controlRef}
         enableZoom={false}
         enablePan={false}
         enableRotate={false}
         autoRotate={true}
-        rotateSpeed={0.4}
+        autoRotateSpeed={3}
+        rotateSpeed={0.5}
         target={new THREE.Vector3(0, 0, 0)}
         onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
       />
@@ -47,9 +53,10 @@ const ModalView = ({
         position={[0, 0, 0]}>
         <Suspense fallback={<Loader />}>
           <Iphone
-            scale={index === 1 ? [15, 15, 15] : [17, 17, 17]}
+            scale={index === 1 ? [15, 15, 15] : [18, 18, 18]}
             item={item}
             size={size}
+            rotation={window.innerWidth < 760 ? [0, Math.PI, 0] : [0, 0, 0]}
           />
         </Suspense>
       </group>
