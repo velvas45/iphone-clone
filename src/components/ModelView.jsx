@@ -33,6 +33,10 @@ const ModalView = ({
       <OrbitControls
         makeDefault
         ref={controlRef}
+        enableZoom={false}
+        enablePan={false}
+        enableRotate={false}
+        autoRotate={true}
         rotateSpeed={0.4}
         target={new THREE.Vector3(0, 0, 0)}
         onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
